@@ -42,6 +42,7 @@ class Board extends React.Component {
 
   handleClick(i) {
     const squares = this.state.squares.slice();
+    console.log("🚀 ~ file: index.js ~ line 45 ~ Board ~ handleClick ~ squares", squares)
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
